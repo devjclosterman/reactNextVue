@@ -12,13 +12,17 @@ import { fadeIn, textVariant } from "../utils/motion";
 const Feedbacks = () => {
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div className="feedback">
-      <h1>Fun Facts:</h1>
-       <h1>What am I doing now?</h1>
+        <div className="feedback">
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Introduction part. 2</p>
+        <h2 className={styles.sectionHeadText}>Fun Facts:</h2>
+      </motion.div>
+    
+       <h1 className={styles.sectionSubText}>What am I doing now?</h1>
        <p>I just started learning Python on 4/25/23</p>
        <p>I will be updating my progress periodically, I have a great mentor so I'm excited!</p>
      <br />
-      <h2>My Hope: Part 1</h2>   
+      <h2 className={styles.sectionSubText}>My Hope:</h2>   
         <p>One day I was thinking about how I could give back to the community. 
         I feel blessed that I have the knowledge to build and deploy website's.
          So I want to contribute my part in making the world a better place.
